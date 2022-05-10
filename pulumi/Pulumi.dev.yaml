@@ -1,0 +1,6 @@
+config:
+  azure-native:location: CentralUS
+  first-project:dbPassword:
+    secure: AAABAKPCCPoKsA1DP98Rbol8BrrXfVY6KJcZXukuXC3GszxLKS9+tXZ+sQ==
+  first-project:dbUser: demo_app_db_user
+  first-project:resourceGroupName: rg-dev

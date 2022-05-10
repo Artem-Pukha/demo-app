@@ -1,0 +1,3 @@
+config:
+  azure-native:location: CentralUS
+  first-project:resourceGroupName: rg-test

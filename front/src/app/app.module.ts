@@ -1,0 +1,38 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from "@angular/material/tabs";
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {AddUserComponent} from "./add-user/add-user.component";
+import {AddItemComponent} from "./add-item/add-item.component";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {GetItemsComponent} from "./get-items/get-items.component";
+import {MatTableModule} from "@angular/material/table";
+import {DeleteUserComponent} from "./delete-user/delete-user.component";
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    AddUserComponent,
+    AddItemComponent,
+    AddItemComponent,
+    GetItemsComponent,
+    DeleteUserComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatTabsModule,
+    FormsModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

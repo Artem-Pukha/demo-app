@@ -1,0 +1,3 @@
+name: first-project
+runtime: nodejs
+description: First project to investigate pulumi tool

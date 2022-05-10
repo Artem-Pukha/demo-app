@@ -1,0 +1,22 @@
+<button class="btn btn-warning btn-pad"
+      (click)="onClick()"> Get users</button>
+
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Choose user name</mat-label>
+    <select matNativeControl [(ngModel)]="chosenUserId" name="chosen">
+      <option value="" selected></option>
+      <option *ngFor="let user of users" [value]="user.id">
+        {{user.id}}
+      </option>
+    </select>
+  </mat-form-field>
+</form>
+
+<input
+  [(ngModel)]="title"
+  type="text"
+  class="form-control"
+  placeholder="Enter item title"><p></p>
+<button class="btn btn-warning btn-pad"
+        (click)="addItem()"> Add new item to chosen user</button>

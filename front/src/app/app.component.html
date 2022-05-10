@@ -1,0 +1,30 @@
+<mat-tab-group (selectedTabChange)="onClick()" mat-align-tabs="center">
+  <mat-tab label="Add user">
+    <div class="container">
+      <div class="one">
+        <add-user></add-user>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Add items to specific user">
+    <div class="container">
+      <div class="two">
+        <add-item></add-item>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Get items of specific user">
+    <div class="container">
+      <div class="three">
+        <get-items></get-items>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Delete user by id">
+    <div class="container">
+      <div class="del">
+        <delete-user></delete-user>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>

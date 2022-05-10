@@ -1,0 +1,27 @@
+<button class="btn btn-warning btn-pad"
+        (click)="getUsers()"> Get users</button>
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Choose user name</mat-label>
+    <select matNativeControl [(ngModel)]="chosenUserId" name="chosen">
+      <option value="" selected></option>
+      <option *ngFor="let user of users" [value]="user.id">
+        {{user.id}}
+      </option>
+    </select>
+  </mat-form-field>
+</form>
+
+<button class="btn btn-warning btn-pad"
+        (click)="getItems()"> Get items of selected user</button>
+
+<table mat-table [hidden]="tableHidden" [dataSource]="items" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="item">
+    <th mat-header-cell *matHeaderCellDef> Items </th>
+    <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

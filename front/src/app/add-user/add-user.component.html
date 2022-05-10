@@ -1,0 +1,21 @@
+<input
+  [(ngModel)]="email"
+  type="text"
+  class="form-control"
+  placeholder="Email"><p></p>
+<input
+  [(ngModel)]="userName"
+  type="text"
+  class="form-control"
+  placeholder="Name"><p></p>
+
+<input
+  [(ngModel)]="surname"
+  type="text"
+  class="form-control"
+  placeholder="Surname"><p></p>
+<button class="btn btn-warning btn-pad"
+        (click)="onClick()"> Add new user </button>
+<p style="color: green">
+  {{status}}
+</p>

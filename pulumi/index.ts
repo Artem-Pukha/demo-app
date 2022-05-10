@@ -1,0 +1,10 @@
+import "./resources/app-service-plan";
+import "./resources/sql-server";
+import "./resources/database";
+import "./resources/key-vault";
+import "./resources/admin-role-assignment";
+import "./resources/db-secret";
+import "./resources/app-service";
+import "./resources/app-service-identity-role-assignment";
+import "./resources/storage-account";
+import "./resources/storage-account-static-website";
